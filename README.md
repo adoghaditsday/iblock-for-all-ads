@@ -1,5 +1,5 @@
 # iblock-for-all-ads
-iBlock for all Ads is a focused ad-blocking extension built to reduce clutter, stop intrusive advertising, and improve usability across video, streaming, anime, forum, shopping, and general browsing websites.
+iBlock is a focused ad-blocking extension built to reduce clutter, stop intrusive advertising, and improve usability across video, streaming, anime, forum, shopping, and general browsing websites.
 
 Unlike simple cosmetic blockers that only hide a few visible page elements, iBlock is designed to target the ad behaviors that commonly make websites frustrating to use: banner ads, linked image ads, animated ad panels, popup triggers, tab-under behavior, and many promotional blocks placed around media players and page content.
 
