@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||doubleclick.net^",
+      "resourceTypes": ["image", "sub_frame", "script", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "resourceTypes": ["image", "sub_frame", "script", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||googleadservices.com^",
+      "resourceTypes": ["image", "sub_frame", "script", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||adservice.google.com^",
+      "resourceTypes": ["image", "sub_frame", "script", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||adsystem.com^",
+      "resourceTypes": ["image", "sub_frame", "script", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||adnxs.com^",
+      "resourceTypes": ["image", "sub_frame", "script", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||taboola.com^",
+      "resourceTypes": ["image", "sub_frame", "script", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||outbrain.com^",
+      "resourceTypes": ["image", "sub_frame", "script", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*(/|_|-)(ad|ads|advert|banner|sponsor)(/|_|-|\\.).*",
+      "resourceTypes": ["image", "sub_frame"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*\\.(gif|webp|png|jpg|jpeg).*(ad|ads|banner|sponsor|promo).*",
+      "resourceTypes": ["image"]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||popads.net^",
+      "resourceTypes": ["script", "sub_frame", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||exoclick.com^",
+      "resourceTypes": ["script", "sub_frame", "xmlhttprequest", "image"]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*(popunder|popup|tabunder|onclickad|clickunder).*",
+      "resourceTypes": ["script", "xmlhttprequest", "sub_frame"]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*(vast|vpaid).*",
+      "resourceTypes": ["xmlhttprequest", "script", "sub_frame"]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": ".*/ads?[/?#=&].*",
+      "resourceTypes": ["image", "sub_frame", "xmlhttprequest"]
+    }
+  }
+]

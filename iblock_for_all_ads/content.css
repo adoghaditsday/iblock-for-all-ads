@@ -1,0 +1,18 @@
+[data-iblock-processed="1"],
+.iblock-hidden {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+html.iblock-super iframe[src*="doubleclick"],
+html.iblock-super iframe[src*="googlesyndication"] {
+  display: none !important;
+}
+
+html.iblock-whitelisted [data-iblock-processed="1"],
+html.iblock-whitelisted .iblock-hidden {
+  display: revert !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}

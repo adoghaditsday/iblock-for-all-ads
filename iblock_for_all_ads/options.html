@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>iBlock for all Ads - Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <img src="icons/icon128.png" alt="logo" class="logo">
+      <div>
+        <h1>iBlock for all Ads</h1>
+        <p>Review mode, counters, whitelist entries, and the unique site log for pages where video ads were detected.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Mode</h2>
+      <div class="mode-row">
+        <button id="regularBtn">Regular</button>
+        <button id="superBtn">Super</button>
+      </div>
+      <p id="modeDescription"></p>
+    </section>
+
+    <section class="card">
+      <h2>Stats</h2>
+      <div class="grid">
+        <div class="stat"><span>Blocked elements</span><strong id="blockedElements">0</strong></div>
+        <div class="stat"><span>Popup suppressions</span><strong id="popupSuppressions">0</strong></div>
+        <div class="stat"><span>Video ad detections</span><strong id="videoAdDetections">0</strong></div>
+        <div class="stat"><span>Unique logged sites</span><strong id="siteCount">0</strong></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Whitelist</h2>
+        <span id="whitelistCount" class="badge">0/50</span>
+      </div>
+      <form id="whitelistForm" class="whitelist-form">
+        <input id="whitelistInput" type="text" placeholder="example.com" autocomplete="off">
+        <button type="submit">Add site</button>
+      </form>
+      <p id="whitelistHint" class="small">Whitelisted domains bypass both page-level blocking and request blocking. Subdomains are included automatically.</p>
+      <div id="whitelistLog" class="log"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Video ad site log</h2>
+        <button id="clearLogBtn" class="danger">Clear log</button>
+      </div>
+      <div id="siteLog" class="log"></div>
+    </section>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

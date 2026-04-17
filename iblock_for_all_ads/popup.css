@@ -1,0 +1,63 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f1117;
+  --panel: #181c24;
+  --line: #293140;
+  --text: #f5f7fb;
+  --muted: #aab6cc;
+  --accent: #63a4ff;
+  --danger: #ff6b6b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-width: 380px;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.4 Arial, sans-serif;
+}
+.wrap { padding: 14px; }
+.brand-row { display: flex; gap: 12px; align-items: center; }
+.logo { width: 40px; height: 40px; border-radius: 10px; }
+h1 { font-size: 18px; margin: 0 0 2px; }
+.sub { margin: 0; color: var(--muted); font-size: 12px; }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px;
+  margin-top: 12px;
+}
+.mode-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.mode-btn, .mini {
+  border: 1px solid var(--line);
+  background: #121722;
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.mode-btn.active { background: var(--accent); color: #07111f; border-color: var(--accent); font-weight: 700; }
+.hint { margin: 10px 0 0; color: var(--muted); min-height: 34px; }
+.hint.compact { min-height: auto; font-size: 12px; }
+.stats { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.stat { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.stat:last-child { border-bottom: none; }
+.list-head, .current-site-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.current-site-row { margin-top: 8px; }
+.count-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.site-list {
+  list-style: none; padding: 0; margin: 0; max-height: 160px; overflow: auto;
+}
+.site-list li {
+  padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; margin-top: 8px; color: var(--muted);
+}
+.danger { border-color: rgba(255,107,107,0.4); color: #ffd6d6; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+footer { margin-top: 12px; display: flex; justify-content: flex-end; }

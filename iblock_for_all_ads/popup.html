@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>iBlock for all Ads</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="brand-row">
+        <img src="icons/icon48.png" alt="logo" class="logo">
+        <div>
+          <h1>iBlock for all Ads</h1>
+          <p class="sub">Twitch · YouTube · anime-sites</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="mode-row">
+        <button id="regularBtn" class="mode-btn">Regular</button>
+        <button id="superBtn" class="mode-btn">Super</button>
+      </div>
+      <p id="modeDescription" class="hint"></p>
+    </section>
+
+    <section class="panel">
+      <div class="list-head current-head">
+        <span>Current site</span>
+        <span id="whitelistCount" class="count-pill">0/50</span>
+      </div>
+      <div class="current-site-row">
+        <strong id="currentSite">Unavailable</strong>
+        <button id="toggleWhitelistBtn" class="mini">Add to whitelist</button>
+      </div>
+      <p class="hint compact">Whitelisted sites bypass both DOM blocking and network blocking for that domain and its subdomains.</p>
+    </section>
+
+    <section class="panel stats">
+      <div class="stat"><span>Blocked elements</span><strong id="blockedElements">0</strong></div>
+      <div class="stat"><span>Popup suppressions</span><strong id="popupSuppressions">0</strong></div>
+      <div class="stat"><span>Sites with video ads</span><strong id="siteCount">0</strong></div>
+    </section>
+
+    <section class="panel">
+      <div class="list-head">
+        <span>Video ad site log</span>
+        <button id="clearLogBtn" class="mini danger">Clear</button>
+      </div>
+      <ul id="siteLog" class="site-list"></ul>
+    </section>
+
+    <footer>
+      <button id="openOptions" class="mini">Open full settings</button>
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
