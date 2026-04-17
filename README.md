@@ -1,3 +1,5 @@
+<img width="128" height="128" alt="icon128" src="https://github.com/user-attachments/assets/02ef9a6e-f4a0-41a9-a32d-2ae21c23b830" />
+
 # iblock-for-all-ads
 iBlock is a focused ad-blocking extension built to reduce clutter, stop intrusive advertising, and improve usability across video, streaming, anime, forum, shopping, and general browsing websites.
 
@@ -43,6 +45,6 @@ Popup and intrusive click-trap reduction
 Stronger filtering for ad-heavy and obscure websites
 
 
-<img width="128" height="128" alt="icon128" src="https://github.com/user-attachments/assets/02ef9a6e-f4a0-41a9-a32d-2ae21c23b830" />
+
 <img width="1280" height="800" alt="Screenshot 2026-04-16 220926" src="https://github.com/user-attachments/assets/9739c885-0126-4f50-949a-591f32907b74" />
 <img width="1280" height="800" alt="Screenshot 2026-04-16 220952" src="https://github.com/user-attachments/assets/2958404d-45d8-427f-8050-60efab5cadbf" />
